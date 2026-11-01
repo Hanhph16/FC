@@ -1,8 +1,6 @@
 #include "globals.h"
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//In this part the starting, stopping and take-off detection is managed.
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 void start_stop_takeoff(void) {
   if (channel_3 < 1050 && channel_4 < 1050)start = 1;                              //For starting the motors: throttle low and yaw left (step 1).
   if (start == 1 && channel_3 < 1050 && channel_4 > 1450) {                        //When yaw stick is back in the center position start the motors (step 2).

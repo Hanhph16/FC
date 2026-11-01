@@ -1,10 +1,5 @@
 #include "globals.h"
 
-//Hieu chuan la ban va can bang ngang bang cap gat. Ket qua duoc in ra Serial Monitor;
-//muon luu vinh vien (thay cho EEPROM 24LC256) thi dan vao config.h.
-
-//Hieu chuan la ban: keu cac gat len goc phai tren de vao, xoay drone du moi huong,
-//keo can pitch xuong het co (channel_2 >= 1900) de ket thuc.
 void calibrate_compass(void) {
   compass_calibration_on = 1;                             //Tat bu offset/scale de lay gia tri tho.
   DEBUG_SERIAL.println("[CAL] Hieu chuan la ban: xoay drone moi huong, xong thi day can pitch len het co");

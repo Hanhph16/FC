@@ -4,7 +4,6 @@
 //Cau hinh timer:
 //  TIM2 CH1 (PA0)           : input capture doc xung PPM tu receiver RC.
 //  TIM4 CH1..CH4 (PB6..PB9) : tao xung PWM 1000-2000us cho 4 ESC.
-//(Da bo TIM3 / PB0 - truoc day dung cho servo tha hang RDC.)
 ///////////////////////////////////////////////////////////////////////////////////////////
 void timer_setup(void) {
   // ---------- Receiver: input capture ----------
